@@ -3,6 +3,8 @@
 
 This project is an **Eureka Server** that acts as a service registry for a microservices-based architecture. Clients can register and discover other services within the ecosystem.
 
+Link to see: http://localhost:8761
+
 ![img.png](img.png)
 
 ## 📋 Prerequisites
