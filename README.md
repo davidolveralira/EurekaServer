@@ -1,47 +1,47 @@
 
 # Eureka Server
 
-Este proyecto es un **Eureka Server** que actúa como un registro de servicios para la arquitectura basada en microservicios. Los clientes pueden registrarse y descubrir otros servicios dentro del ecosistema.
+This project is an **Eureka Server** that acts as a service registry for a microservices-based architecture. Clients can register and discover other services within the ecosystem.
 
-## 📋 Requisitos previos
+## 📋 Prerequisites
 
-Asegúrate de tener instalados los siguientes elementos:
+Ensure you have the following installed:
 
-- **Java 21** (o superior).
-- **Gradle** (versión 7.6 o superior).
-- Un IDE compatible con Spring Boot (por ejemplo, IntelliJ IDEA o STS).
-- Conexión a Internet para descargar las dependencias.
+- **Java 21** (or higher).
+- **Gradle** (version 7.6 or higher).
+- An IDE compatible with Spring Boot (e.g., IntelliJ IDEA or STS).
+- Internet connection to download dependencies.
 
-## 🚀 Configuración y ejecución
+## 🚀 Setup and Execution
 
-### 1. Clonar el repositorio
+### 1. Clone the Repository
 
 ```bash
-git clone <URL_DEL_REPOSITORIO>
-cd <NOMBRE_DEL_PROYECTO>
+git clone <REPOSITORY_URL>
+cd <PROJECT_NAME>
 ```
 
-### 2. Compilar el proyecto
+### 2. Build the Project
 
-Ejecuta el siguiente comando para compilar el proyecto y verificar las dependencias:
+Run the following command to build the project and verify dependencies:
 
 ```bash
 ./gradlew clean build
 ```
 
-### 3. Ejecutar el servidor
+### 3. Run the Server
 
-Puedes iniciar el Eureka Server con el siguiente comando:
+You can start the Eureka Server with the following command:
 
 ```bash
 ./gradlew bootRun
 ```
 
-Por defecto, el servidor estará disponible en [http://localhost:8761](http://localhost:8761).
+By default, the server will be available at [http://localhost:8761](http://localhost:8761).
 
-### 4. Configuración del cliente Eureka
+### 4. Configure the Eureka Client
 
-Para registrar un cliente en el Eureka Server, configura las propiedades de tu aplicación cliente en el archivo `application.yml`:
+To register a client with the Eureka Server, configure the client's `application.yml` file as follows:
 
 ```yaml
 eureka:
@@ -50,23 +50,23 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 ```
 
-## 📂 Estructura del proyecto
+## 📂 Project Structure
 
-- **`src/main/java`**: Código fuente principal.
-- **`src/main/resources/application.yml`**: Archivo de configuración para el Eureka Server.
-- **`build.gradle`**: Archivo de configuración de Gradle.
-- **`README.md`**: Documentación del proyecto.
+- **`src/main/java`**: Main source code.
+- **`src/main/resources/application.yml`**: Configuration file for the Eureka Server.
+- **`build.gradle`**: Gradle configuration file.
+- **`README.md`**: Project documentation.
 
-## 🛠 Tecnologías utilizadas
+## 🛠 Technologies Used
 
 - **Java 21**
 - **Spring Boot 3.2**
 - **Spring Cloud 2023.0**
 - **Gradle**
 
-## 🌐 Configuración de Eureka Server
+## 🌐 Eureka Server Configuration
 
-El archivo `application.yml` incluye los parámetros básicos para configurar el servidor:
+The `application.yml` file includes the basic parameters for configuring the server:
 
 ```yaml
 server:
@@ -84,14 +84,14 @@ spring:
     name: eureka-server
 ```
 
-## 📖 Referencias
+## 📖 References
 
-- [Documentación oficial de Spring Cloud Netflix](https://spring.io/projects/spring-cloud-netflix)
-- [Documentación de Gradle](https://docs.gradle.org/)
+- [Spring Cloud Netflix Official Documentation](https://spring.io/projects/spring-cloud-netflix)
+- [Gradle Documentation](https://docs.gradle.org/)
 - [Java 21 Features](https://openjdk.org/projects/jdk/21/)
 
-## 👤 Autor
+## 👤 Author
 
 - **David**  
-  Desarrollador Backend y Fullstack.  
-  ¡Siempre dispuesto a aprender y mejorar proyectos en microservicios!
+  Backend and Fullstack Developer.  
+  Always eager to learn and improve microservices projects!
